@@ -19,6 +19,10 @@
   background-color: #eeeeee;
   margin-right: 30px;
   padding: 10px 10px;
+  position: relative;
+}
+.main-content:nth-child(3) {
+  margin-right: 0;
 }
 .main-step1 {
   width: auto;
@@ -45,6 +49,9 @@
   width: 50px;
   color: #fff;
   background-color: #ff9a4b;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .title {
   margin: 15px 0 5px;
@@ -56,4 +63,21 @@
   width: 100%;
   height: 50px;
   background-color: #aaaaaa;
+}
+@media screen and (max-width: 768px){
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .main-content:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
